@@ -8,3 +8,41 @@
 }
 
 .success { display: none; }
+
+.prize {
+  background:
+    radial-gradient(circle at 18% 24%, rgba(255, 219, 111, .9) 0 7%, transparent 8%),
+    radial-gradient(circle at 82% 20%, rgba(241, 138, 126, .65) 0 8%, transparent 9%),
+    radial-gradient(circle at 18% 80%, rgba(86, 177, 183, .45) 0 9%, transparent 10%),
+    linear-gradient(145deg, #fff4c8 0%, #f6c7af 48%, #d9b7dc 100%);
+}
+
+.prize::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: 50%;
+}
+
+.prize__kicker,
+.prize strong,
+.prize__destination,
+.mini-tickets { position: relative; z-index: 1; }
+
+.mini-tickets { margin-top: 20px; gap: 2px; }
+
+.mini-tickets span {
+  width: 88px;
+  height: 50px;
+  padding: 7px 6px;
+  border: 1.5px solid #9e6642;
+  font-size: 8px;
+  line-height: 1.05;
+  background: linear-gradient(135deg, #fffaf0, #ffe0a6);
+  box-shadow: 0 8px 16px rgba(91, 49, 39, .18);
+}
+
+.mini-tickets span + span { transform: rotate(10deg) translate(-10px, 4px); }
+.mini-tickets b { font-size: 9px; }
+.mini-tickets i { display: block; font-size: 5px; font-style: normal; letter-spacing: .16em; margin-bottom: 3px; }
