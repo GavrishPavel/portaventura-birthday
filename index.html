@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4ecdf">
+  <title>Твой счастливый билет</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <div class="glow glow--one"></div><div class="glow glow--two"></div>
+    <header class="hero-copy">
+      <span class="eyebrow">24 · 09 · 2026</span>
+      <h1>С днём рождения!</h1>
+      <p>Сегодня тебя ждёт кое-что особенное.<br><strong>Проверь свой счастливый билет.</strong></p>
+    </header>
+
+    <section class="reveal" aria-label="Подарок со стираемым защитным слоем">
+      <div class="prize">
+        <div class="spark spark--one">✦</div><div class="spark spark--two">✦</div>
+        <span class="prize__kicker">ТВОЙ ПОДАРОК</span>
+        <strong>2 билета</strong>
+        <span class="prize__destination">в PortAventura</span>
+        <div class="mini-tickets" aria-hidden="true">
+          <span>PORT<br><b>AVENTURA</b></span><span>PORT<br><b>AVENTURA</b></span>
+        </div>
+      </div>
+      <canvas id="scratch" aria-label="Сотри защитный слой, чтобы узнать подарок"></canvas>
+      <div class="scratch-hint" id="hint"><span class="coin">↗</span><span>Сотри слой</span></div>
+    </section>
+
+    <p class="instruction" id="instruction">Проведи пальцем или курсором по золотому кругу</p>
+    <button class="reset" id="reset" type="button">Стереть заново</button>
+    <div class="success" id="success" role="status">Подарок твой! Собирай чемодан ✈</div>
+    <p class="signature">С любовью, для твоих новых впечатлений</p>
+  </main>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
