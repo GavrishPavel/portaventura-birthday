@@ -1,13 +1,16 @@
 .scratch-hint {
   display: block;
   color: #5a4638;
-  font-size: 12px;
+  font-size: 17px;
+  line-height: 1.35;
   font-weight: 600;
-  letter-spacing: .16em;
-  text-transform: uppercase;
+  letter-spacing: .02em;
+  text-transform: none;
+  width: 80%;
 }
 
 .success { display: none; }
+.instruction { display: none; }
 
 .prize {
   background:

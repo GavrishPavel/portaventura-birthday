@@ -34,11 +34,6 @@ function paintCover() {
     ctx.fillRect(Math.random() * rect.width, Math.random() * rect.height, Math.random() * 2 + .5, .7);
   }
   ctx.globalAlpha = 1;
-  ctx.fillStyle = 'rgba(82,57,36,.28)';
-  ctx.font = '700 9px Manrope';
-  ctx.textAlign = 'center';
-  ctx.letterSpacing = '3px';
-  ctx.fillText('СЧАСТЛИВЫЙ БИЛЕТ', rect.width / 2, rect.height - 27);
 
   revealed = false;
   moves = 0;
