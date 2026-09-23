@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="refinement.css">
 </head>
 <body>
   <main class="page">
@@ -29,12 +30,12 @@
         </div>
       </div>
       <canvas id="scratch" aria-label="Сотри защитный слой, чтобы узнать подарок"></canvas>
-      <div class="scratch-hint" id="hint"><span class="coin">↗</span><span>Сотри слой</span></div>
+      <div class="scratch-hint" id="hint"><span>Сотри слой</span></div>
     </section>
 
     <p class="instruction" id="instruction">Проведи пальцем или курсором по золотому кругу</p>
     <button class="reset" id="reset" type="button">Стереть заново</button>
-    <div class="success" id="success" role="status">Подарок твой! Собирай чемодан ✈</div>
+    <div class="success" id="success" role="status" aria-hidden="true"></div>
   </main>
   <canvas id="confetti" aria-hidden="true"></canvas>
   <script src="script.js"></script>

@@ -86,10 +86,8 @@ function revealPrize() {
   scratch.style.pointerEvents = 'none';
   hint.style.opacity = '0';
   resetButton.classList.add('visible');
-  success.classList.add('visible');
   instruction.textContent = 'Приключение начинается!';
   launchConfetti();
-  setTimeout(() => success.classList.remove('visible'), 4500);
 }
 
 scratch.addEventListener('pointerdown', event => {

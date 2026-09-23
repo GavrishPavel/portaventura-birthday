@@ -1,0 +1,10 @@
+.scratch-hint {
+  display: block;
+  color: #5a4638;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.success { display: none; }
