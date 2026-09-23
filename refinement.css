@@ -12,26 +12,59 @@
 .success { display: none; }
 .instruction { display: none; }
 
-.prize {
+body {
   background:
-    radial-gradient(circle at 18% 24%, rgba(255, 219, 111, .9) 0 7%, transparent 8%),
-    radial-gradient(circle at 82% 20%, rgba(241, 138, 126, .65) 0 8%, transparent 9%),
-    radial-gradient(circle at 18% 80%, rgba(86, 177, 183, .45) 0 9%, transparent 10%),
-    linear-gradient(145deg, #fff4c8 0%, #f6c7af 48%, #d9b7dc 100%);
+    radial-gradient(circle at 12% 16%, rgba(232, 172, 123, .3), transparent 22%),
+    radial-gradient(circle at 88% 78%, rgba(204, 153, 183, .25), transparent 25%),
+    linear-gradient(145deg, #fff8ee 0%, #f1e1d1 56%, #faefe6 100%);
+}
+
+.hero-copy h1 { color: #5a382f; text-shadow: 0 3px 0 rgba(255,255,255,.55); }
+.hero-copy p strong { font-size: 15px; color: #9b6254; }
+
+.celebration { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: -1; }
+.celebration span { position: absolute; width: 8px; height: 22px; border-radius: 8px; opacity: .68; transform: rotate(25deg); }
+.celebration span:nth-child(1) { left: 9%; top: 12%; background: #d49a62; transform: rotate(-28deg); }
+.celebration span:nth-child(2) { right: 12%; top: 18%; background: #d9979a; transform: rotate(38deg); }
+.celebration span:nth-child(3) { left: 16%; top: 43%; width: 11px; height: 11px; background: #83a9a5; transform: rotate(45deg); }
+.celebration span:nth-child(4) { right: 9%; top: 47%; background: #deb459; transform: rotate(-42deg); }
+.celebration span:nth-child(5) { left: 7%; bottom: 12%; background: #d9979a; transform: rotate(55deg); }
+.celebration span:nth-child(6) { right: 16%; bottom: 9%; width: 10px; height: 10px; background: #83a9a5; transform: rotate(18deg); }
+
+.prize {
+  background: #6d443a;
+  overflow: hidden;
 }
 
 .prize::before {
   content: "";
   position: absolute;
-  inset: 18px;
-  border: 1px solid rgba(255, 255, 255, .6);
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(rgba(58, 26, 24, .25), rgba(58, 26, 24, .4)),
+    url("assets/park-sunset.png") center / cover;
+  filter: blur(5px) saturate(1.35);
+  transform: scale(1.08);
+}
+
+.prize::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  z-index: 0;
+  border: 1px solid rgba(255,255,255,.65);
   border-radius: 50%;
+  box-shadow: inset 0 0 55px rgba(255, 142, 87, .25);
 }
 
 .prize__kicker,
 .prize strong,
 .prize__destination,
-.mini-tickets { position: relative; z-index: 1; }
+.mini-tickets { position: relative; z-index: 2; text-shadow: 0 2px 10px rgba(55,25,22,.55); }
+.prize__kicker { color: #fff2ce; }
+.prize strong { color: #fff; }
+.prize__destination { color: #ffe8b7; }
 
 .mini-tickets { margin-top: 20px; gap: 2px; }
 
